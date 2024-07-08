@@ -31,6 +31,7 @@ export default function LogInForm() {
         return;
       }
       setResponse(json.token)
+      localStorage.setItem('jwt', json.token)
     }
 
   return (
